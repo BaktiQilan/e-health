@@ -97,7 +97,7 @@ class Auth extends CI_Controller
         ]);
 
         if ($this->form_validation->run() == false) {
-            $data['title'] = 'Pendaftaran Operator';
+            $data['title'] = 'Page Pendaftaran Operator';
             $this->load->view('templates/auth_header', $data);
             $this->load->view('auth/registration');
             $this->load->view('templates/auth_footer');
@@ -118,11 +118,11 @@ class Auth extends CI_Controller
 
     public function logout()
     {
-        $this->session->unset_userdata('email');
+        $this->session->unset_userdata('username');
         $this->session->unset_userdata('role_id');
 
         $this->session->set_flashdata('message', '<div class="alert alert-success mx-auto" role="alert">Anda telah berhasil Logout</div>');
-        redirect('welcome');
+        redirect('auth');
     }
 
     public function blocked()

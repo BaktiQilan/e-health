@@ -19,7 +19,7 @@
 
                                 <form class="user" method="post" action="<?= base_url('auth'); ?>">
                                     <div class="form-group">
-                                        <input type="username" class="form-control form-control-user" id="username" name="username" placeholder="Enter username..." value="<?= set_value('username'); ?>">
+                                        <input type="username" class="form-control form-control-user" id="username" name="username" placeholder="Enter Username.." value="<?= set_value('username'); ?>">
                                         <?= form_error('username', '<small class="text-danger pl-3">', '</small>'); ?>
                                     </div>
                                     <div class="form-group">
@@ -33,9 +33,6 @@
                                 <hr>
                                 <div class="text-center">
                                     <a class="small" href="<?= base_url('auth/registration'); ?>">Belum punya akun? Daftar Sekarang!</a>
-                                </div>
-                                <div class="text-center">
-                                    <a class="small" href="<?= base_url(''); ?>">Kembali ke Home</a>
                                 </div>
                             </div>
                         </div>
