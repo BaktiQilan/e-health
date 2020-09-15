@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<?php
-include "koneksi.php"; ?>
 <html lang="en">
 
 <head>
@@ -19,10 +17,11 @@ include "koneksi.php"; ?>
 
     <!-- Custom styles for this template-->
     <link href="<?= base_url('assets/'); ?>css/sb-admin-2.min.css" rel="stylesheet">
+    
 
 </head>
 
 <body id="page-top">
 
     <!-- Page Wrapper -->
-    <div id="wrapper">
+    <div id="wrapper"> 
